@@ -1,0 +1,142 @@
+body {
+    margin: 0px;
+    min-height: 700px;
+    display: flex;
+    background-image:linear-gradient( #06141B,#11212D,#253745,#4A5C6A,#9BABAB,#CCD0CF);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    background-color: black;
+    padding: 10px;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+#main::after, #main::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#561C24,#6D2932,#C7B7A3,#E8D8C4,#561C24);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 15px;
+    animation: 3s spin liner infinite;
+}
+#main::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    form{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+#con1{
+    background-color:black;
+    color: white;
+    width: 380px;
+    height: 500px;
+}
+#con2{
+    width: 500px;
+    height: 500px;
+}
+#con2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+p{
+    color: rgba(255, 255, 255, 0.589);
+    font-size: small;
+    margin-left: 38px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#par{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+#one{
+    background-color: #282828;
+    border-radius: 30px;
+    width: 120px;
+    height: 20px;
+    padding: 9px;
+    position: relative;
+}
+#sec{
+    background-color: #282828;
+    margin: 11px;
+    border-radius: 30px;
+    width: 120px;
+    height: 20px;
+    padding: 9px;
+}
+#email{
+    background-color: #282828;
+    margin: 0px;
+    border-radius: 30px;
+    width: 273px;
+    height: 20px;
+    padding: 8px;
+}
+#password{
+    background-color: #282828;
+    margin-top: 9px;
+    border-radius: 30px;
+    width: 273px;
+    height: 20px;
+    padding: 8px;
+}
+#sub{
+    font-family:'Times New Roman', serif;
+    background-color: red;
+    margin-top: 18px;
+    border-radius: 30px;
+    width: 150px;
+    height: 45px;
+    color: white;
+    font-size:smaller;
+}
+#div1{
+   display: flex;
+   justify-content: space-evenly;
+}
+h1{
+    
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 35px;
+    
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+     
+}
+#div2{
+    margin-left: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer{ 
+    position: fixed;
+    bottom: 0px;
+}
