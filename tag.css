@@ -104,14 +104,14 @@ p{
     padding: 8px;
 }
 #sub{
-    font-family:'Times New Roman', serif;
+    font-family:'Sans-serif';
     background-color: red;
     margin-top: 18px;
     border-radius: 30px;
     width: 150px;
     height: 45px;
     color: white;
-    font-size:smaller;
+    font-size: 15px;
 }
 #div1{
    display: flex;
